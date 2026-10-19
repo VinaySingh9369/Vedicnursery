@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Vedic Nursery — Plants &amp; Trees</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+
+      <!-- use for the icon of the flower -->
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="#4C7A3A" stroke-width="2"/>
+        <path d="M20 30V16" stroke="#1F3D2B" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 20c0-6 6-9 10-8-1 6-5 9-10 8Z" fill="#4C7A3A"/>
+        <path d="M20 24c0-5-5-8-9-7 1 5 4 8 9 7Z" fill="#6C9A56"/>
+      </svg>
+      Vedic Nursery
+    </a>
+    <ul class="nav-links">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+    <div class="nav-right">
+      <button class="cart-btn" id="cartOpenBtn" aria-haspopup="dialog">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+        Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Grown without chemicals, since day one</span>
+      <h1>Trees &amp; Plants, <em>raised </em> at Vedic Nursery.</h1>
+      <p class="lead">A neighbourhood Vedic Nursery growing  Golden Bottal Brush, Kajorina Tapori, Red Machira, Latusa Tapori Plant  and more in living soil — no synthetic pesticides, no shortcuts. Pick a sapling, take it home, watch it grow.</p>
+      <div class="hero-ctas">
+        <a href="#shop" class="btn btn-primary">Browse the Vedic Nursery</a>
+        <a href="#location" class="btn btn-ghost">Find us on the map</a>
+      </div>
+    </div>
+
+<div class="hero-art" aria-hidden="true">
+    <img
+        src="images/golden-bottle-brush.png"
+        alt=""
+        class="hero-plant-image"
+    >
+</div>
+  </div>
+  <div class="pot-row wrap" aria-hidden="true">
+    <svg viewBox="0 0 60 64"><path d="M8 20h44l-8 40H16Z" fill="rgba(247,245,234,0.14)"/><path d="M30 20c0-14-12-18-12-18s2 14 12 18Z" fill="rgba(247,245,234,0.22)"/></svg>
+    <svg viewBox="0 0 60 64"><path d="M10 24h40l-6 36H16Z" fill="rgba(247,245,234,0.14)"/><circle cx="30" cy="16" r="12" fill="rgba(247,245,234,0.22)"/></svg>
+    <svg viewBox="0 0 60 64"><path d="M8 20h44l-8 40H16Z" fill="rgba(247,245,234,0.14)"/><path d="M30 20c0-16 14-22 14-22s0 18-14 22Z" fill="rgba(247,245,234,0.22)"/></svg>
+    <svg viewBox="0 0 60 64"><path d="M10 24h40l-6 36H16Z" fill="rgba(247,245,234,0.14)"/><circle cx="24" cy="18" r="9" fill="rgba(247,245,234,0.2)"/><circle cx="36" cy="14" r="10" fill="rgba(247,245,234,0.24)"/></svg>
+    <svg viewBox="0 0 60 64"><path d="M8 20h44l-8 40H16Z" fill="rgba(247,245,234,0.14)"/><path d="M30 20c0-14-12-18-12-18s2 14 12 18Z" fill="rgba(247,245,234,0.22)"/></svg>
+    <svg viewBox="0 0 60 64"><path d="M10 24h40l-6 36H16Z" fill="rgba(247,245,234,0.14)"/><circle cx="30" cy="16" r="12" fill="rgba(247,245,234,0.22)"/></svg>
+  </div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">The Nursery Cart</p>
+      <h2>Take a sapling home this week</h2>
+      <p>Every plant is potted the same week you order, straight from vatika soil. Add a few to your enquiry cart and send us your details — we'll confirm availability and delivery.</p>
+    </div>
+    <div class="plant-grid" id="plantGrid"><!-- filled by JS --></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p class="sec-eyebrow">About Us</p>
+     
+<h2 style="font-family:var(--font-display);
+           font-size:clamp(1.7rem,3vw,2.3rem);
+           color:var(--forest);
+           margin:0 0 18px;">
+  Growing Green Dreams Since 2020
+</h2>
+
+<p>
+  Vedic Nursery began its journey in 2020 with a simple belief:
+  every space deserves a touch of nature. What started as a small
+  backyard garden featuring Golden Bottle Brush and Red Machira
+  plants has grown into a nursery dedicated to bringing greenery,
+  freshness, and natural beauty to every environment.
+</p>
+
+<p>
+  We carefully nurture our plants to bring life, elegance, and
+  natural beauty to homes, gardens, hotels, offices, resorts,
+  and commercial spaces.
+</p>
+
+<p>
+  Whether you're decorating an interior, designing a landscape,
+  or creating a welcoming outdoor space, our collection helps
+  transform ordinary places into beautiful green surroundings.
+</p>
+
+<p>
+  <strong>Our philosophy is simple:</strong> We don't just grow
+  plants; we help you create beautiful spaces and a greener
+  tomorrow — one plant at a time.
+</p>
+  </div>
+   <div class="about-art">
+    <img
+        src="images/golden-bottle-brush.png"
+        alt="Golden Bottle Brush Tapori Plant"
+        class="about-plant-image"
+        loading="lazy"
+    >
+</div>
+  </div>
+</section>
+
+<!-- ============ MAP / LOCATION ============ -->
+<section class="map-sec" id="location">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">Visit the Nursery</p>
+      <h2>Come pick your own sapling</h2>
+      <p>Walk the rows yourself before you decide — most people leave with something they didn't plan on.</p>
+    </div>
+    <div class="map-grid">
+      <div class="map-embed">
+        <!-- Replace the src query below with your exact address or lat/long for an accurate pin -->
+        <iframe
+          src="https://www.google.com/maps?q=New+Delhi&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map to Organic Organic Vedic Nursery">
+        </iframe>
+      </div>
+      <div class="map-info">
+        <h3>Organic  Vedic Nursery</h3>
+        <div class="addr-line">📍 <span>Location : Chauhan Patti, Soniya Vihar, Delhi-110094, India</span></div>
+        <div class="addr-line">🕒 <span>Open daily, 8:00 AM – 7:00 PM</span></div>
+        <div class="addr-line">📞 <span>  Contact no: 7982581374</span></div>
+        <p>Tap below to open turn-by-turn directions in Google Maps.</p>
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Organic+Vedic+Nursery+New+Delhi" target="_blank" rel="noopener">Get Directions →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="social-block">
+      <h3>Talk to us directly</h3>
+      <p>Prefer chatting over browsing? Reach the Nursery on any of these.</p>
+      <div class="social-list">
+        <!-- <a class="social-link" href="https://wa.me/+91 7982581374" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-14.7-4.4L4 21l5.6-1.3A8 8 0 0 1 20 12Z" stroke="currentColor" stroke-width="1.8"/></svg>
+          WhatsApp
+        </a> -->
+        
+<a class="social-link" href="https://wa.me/7982581374" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M20 12a8 8 0 1 1-14.7-4.4L4 21l5.6-1.3A8 8 0 0 1 20 12Z"
+          stroke="currentColor"
+          stroke-width="1.8"/>
+  </svg>
+   WhatsApp
+</a>
+
+
+        <a class="social-link" href="https://www.instagram.com/nurseryvedic?utm_source=qr&obrf=OXR3eHRnYXk0ajh2" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+          Instagram
+        </a>
+        <a class="social-link" href="https://www.facebook.com/share/19e1M1KPNW/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2.2-2H17V1.2C16.6 1.1 15.4 1 14 1c-3 0-4.8 1.8-4.8 5v2H6v4h3.2v8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          Facebook
+        </a>
+        <a class="social-link" href="https://youtube.com/@organicvedicnursery" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="6" width="19" height="12" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 9.5 15 12l-4.5 2.5Z" fill="currentColor"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="sec-head" style="margin-bottom:22px;">
+        <p class="sec-eyebrow"><b>Send an Enquiry</b></p>
+        <h2 style="font-size:clamp(1.5rem,2.6vw,2rem);">We'll get back within a day</h2>
+      </div>
+
+              <% if (success_msg && success_msg.length > 0) { %>
+            <div class="alert alert-success" style="display:block; padding:20px; margin:25px 0; background:#d4edda; color:#155724; border-radius:8px;">
+              <%= success_msg[0] %>
+            </div>
+          <% } %>
+
+          <% if (error_msg && error_msg.length > 0) { %>
+            <div class="alert alert-danger" style="display:block; padding:20px; margin:25px 0; background:#f8d7da; color:#721c24; border-radius:8px;">
+              <%= error_msg[0] %>
+            </div>
+          <% } %>
+
+     
+      <form class="contact-form" id="enquiryForm" action="/enquiry" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry — Organic Organic Vedic Nursery">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- <div class="cart-summary-box" id="formCartSummary">Your cart is empty — browse the vatika above and add a plant or two.</div> -->
+
+        <div class="form-row">
+          <div class="field">
+            <label for="fName">Full name</label>
+            <input type="text" id="fName" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="fPhone">Phone number</label>
+            <input type="tel" id="fPhone" name="phone" placeholder="10-digit mobile number" pattern="[0-9+ -]{7,15}" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="fEmail">Email address</label>
+          <input type="email" id="fEmail" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="fMsg">Message / plants you're interested in</label>
+          <textarea id="fMsg" name="message" placeholder="Tell us a bit about your space, or any questions."></textarea>
+        </div>
+
+        <input type="hidden" name="Cart Items" id="fCartHidden" value="">
+
+        <button type="submit" class="submit-btn">Send Enquiry</button>
+        <p class="form-note">Your name, phone and email are sent directly to the  Nursery owner — never shared elsewhere.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-inner">
+    <span class="brand" style="font-size:1.05rem;">🌿  Vedic Nursery</span>
+    <span>© 2026  Vedic Nursery. Grown with soil, not shortcuts.</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" role="dialog" aria-label="Your cart">
+  <div class="drawer-head">
+    <h3>Your Enquiry Cart</h3>
+    <button class="drawer-close" id="drawerCloseBtn" aria-label="Close cart">×</button>
+  </div>
+  <div class="drawer-items" id="drawerItems">
+    <p class="drawer-empty">No plants added yet.</p>
+  </div>
+  <div class="drawer-foot">
+    <div class="drawer-total"><span>Total</span><span id="drawerTotal">₹0</span></div>
+    <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;" id="drawerCheckout">Send Enquiry →</a>
+  </div>
+</aside>
+
+<script src="/js/script.js" defer></script>
+</body>
+</html>
