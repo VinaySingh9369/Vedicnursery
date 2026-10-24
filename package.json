@@ -4,12 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start":"node app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^2.4.0",
     "connect-flash": "^0.1.1",
     "dotenv": "^18.0.8",
     "ejs": "^7.0.2",
